@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruleta Cine Chat</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Ruleta Cine Chat<h1>
+
+    <div class="form">
+      <input type="text" id="movieName" placeholder="Nombre de la película" required>
+      <input type="number" id="movieProbability" placeholder="Probabilidad (%)" required min="1" max="100">
+      <button onclick="addMovie()">Agregar Película</button>
+    </div>
+
+    <h3>Lista de Películas</h3>
+    <ul id="movieList"></ul>
+
+    <button id="spinButton" onclick="spinWheel()">Girar Ruleta</button>
+
+    <h3>Película Elegida:</h3>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
